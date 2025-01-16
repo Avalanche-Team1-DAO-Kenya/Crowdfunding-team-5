@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrowdFunding Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>CrowdFunding DApp</h1>
+    <button id="connectWallet">Connect Wallet</button>
+    <p id="walletAddress"></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Create a Campaign</h2>
+      <form id="createCampaignForm">
+        <input type="text" id="title" placeholder="Title" required>
+        <textarea id="description" placeholder="Description" required></textarea>
+        <input type="number" id="target" placeholder="Target Amount (in AVAX)" required>
+        <input type="datetime-local" id="deadline" required>
+        <input type="text" id="image" placeholder="Image URL" required>
+        <button type="submit">Create Campaign</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Donate to a Campaign</h2>
+      <form id="donateForm">
+        <input type="number" id="campaignId" placeholder="Campaign ID" required>
+        <input type="number" id="donationAmount" placeholder="Amount (in AVAX)" required>
+        <button type="submit">Donate</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>View Campaigns</h2>
+      <button id="viewCampaigns">Fetch Campaigns</button>
+      <div id="campaignList"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
