@@ -30,4 +30,4 @@ Features:
 8. ​Run the application locally: npm start
 
 # Team member
-1. George Abel Oyuke-Project manager
+1. George Abel Oyuke
