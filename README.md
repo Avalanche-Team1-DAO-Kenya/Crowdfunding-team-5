@@ -25,9 +25,17 @@ Features:
 
 6. Open the web3.js and add your network details
 
-7. ​Deploy to Avalanche network: npx hardhat run scripts/deploy.js --network avalanche
+7. ​Deploy to Avalanche network: npx hardhat run ignition/deploy.js --network avalanche
 
 8. ​Run the application locally: npm start
+       ```shell
+      npx hardhat help
+      npx hardhat test
+      REPORT_GAS=true npx hardhat test
+      npx hardhat node
+      npx hardhat ignition deploy ./ignition/modules/Lock.js
+      ```
+   
 
 # Team member
 1. George Abel Oyuke
